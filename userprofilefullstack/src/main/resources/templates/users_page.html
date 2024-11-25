@@ -15,11 +15,12 @@
     </tr>
     <tr th:each="userResponseDTO : ${userResponseDTOS}">
         <!--Display username-->
-        <td th:text="${userResponseDTO.username}"/>
+        <td th:text="${userResponseDTO.username()}"> </td>
+        <td th:
         <!--Write your code to display bio-->
-        <td th:text="${userResponseDTO.profileResponseDTO.bio}"></td>
+        <td th:text="${userResponseDTO.profileResponseDTO.bio()}"></td>
         <!--Write your code to display location-->
-        <td th:text="${userResponseDTO.profileResponseDTO.location}"></td>
+        <td th:text="${userResponseDTO.profileResponseDTO.location()}"></td>
     </tr>
 </table>
 </body>
